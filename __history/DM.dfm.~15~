@@ -1,0 +1,80 @@
+object unitDM: TunitDM
+  OldCreateOrder = False
+  Height = 362
+  Width = 762
+  object Conexao: TFDConnection
+    Params.Strings = (
+      'Database=CNPJ'
+      'User_Name=root'
+      'DriverID=MySQL')
+    Connected = True
+    LoginPrompt = False
+    Left = 32
+    Top = 32
+  end
+  object dsSql: TDataSource
+    DataSet = qrSql
+    Left = 112
+    Top = 88
+  end
+  object tbPessoasJuridicas: TFDTable
+    Active = True
+    IndexFieldNames = 'ID_PESSOA_JUD'
+    Connection = Conexao
+    TableName = 'CNPJ.pessoa_juridica'
+    Left = 112
+    Top = 32
+  end
+  object qrSql: TFDQuery
+    Connection = Conexao
+    SQL.Strings = (
+      
+        #39'INSERT INTO pessoa_juridica (CNPJ, RAZAO_SOCIAL, INSCRI_ESTADUA' +
+        'L, NIRE, DATA_CONTRATO, ENDERECO, BAIRRO, CIDADE, ESTADO, TELEFO' +
+        'NE, EMAIL, CEP, OBSERVACAO) VALUES (:CNPJ, :RAZAO_SOCIAL, :INSCR' +
+        'I_ESTADUAL, :NIRE, :DATA_CONTRATO, :ENDERECO, :BAIRRO, :CIDADE, ' +
+        ':ESTADO, :TELEFONE, :EMAIL, :CEP, :OBSERVACAO)'#39)
+    Left = 112
+    Top = 144
+    ParamData = <
+      item
+        Name = 'CNPJ'
+      end
+      item
+        Name = 'RAZAO_SOCIAL'
+      end
+      item
+        Name = 'INSCRI_ESTADUAL'
+      end
+      item
+        Name = 'NIRE'
+      end
+      item
+        Name = 'DATA_CONTRATO'
+      end
+      item
+        Name = 'ENDERECO'
+      end
+      item
+        Name = 'BAIRRO'
+      end
+      item
+        Name = 'CIDADE'
+      end
+      item
+        Name = 'ESTADO'
+      end
+      item
+        Name = 'TELEFONE'
+      end
+      item
+        Name = 'EMAIL'
+      end
+      item
+        Name = 'CEP'
+      end
+      item
+        Name = 'OBSERVACAO'
+      end>
+  end
+end

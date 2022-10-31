@@ -1,0 +1,33 @@
+object unitDM: TunitDM
+  OldCreateOrder = False
+  Height = 362
+  Width = 762
+  object Conexao: TFDConnection
+    Params.Strings = (
+      'Database=CNPJ'
+      'User_Name=root'
+      'DriverID=MySQL')
+    Connected = True
+    LoginPrompt = False
+    Left = 32
+    Top = 32
+  end
+  object dsSql: TDataSource
+    DataSet = Sql
+    Left = 112
+    Top = 88
+  end
+  object tbPessoasJuridicas: TFDTable
+    Active = True
+    IndexFieldNames = 'ID_PESSOA_JUD'
+    Connection = Conexao
+    TableName = 'CNPJ.pessoa_juridica'
+    Left = 112
+    Top = 32
+  end
+  object Sql: TFDQuery
+    Connection = Conexao
+    Left = 112
+    Top = 144
+  end
+end

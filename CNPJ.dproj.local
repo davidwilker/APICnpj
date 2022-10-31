@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/10/21 05:37:07.000.540,=C:\Users\david.wilker\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/10/21 06:05:35.000.382,=E:\Delphi\APICnpj\Pkg.Json.DTO.pas</Transaction>
+    <Transaction>2022/10/21 06:06:49.000.121,=E:\Delphi\APICnpj\RootUnit.pas</Transaction>
+    <Transaction>2022/10/21 06:10:04.000.346,C:\Users\david.wilker\Documents\Embarcadero\Studio\Projects\Unit1.pas=E:\Delphi\APICnpj\UnitPrincipaal.pas</Transaction>
+    <Transaction>2022/10/21 06:10:04.000.346,C:\Users\david.wilker\Documents\Embarcadero\Studio\Projects\Unit1.dfm=E:\Delphi\APICnpj\UnitPrincipaal.dfm</Transaction>
+    <Transaction>2022/10/21 06:10:19.000.384,C:\Users\david.wilker\Documents\Embarcadero\Studio\Projects\Project1.dproj=E:\Delphi\APICnpj\CNPJ.dproj</Transaction>
+    <Transaction>2022/10/21 06:35:44.000.071,E:\Delphi\APICnpj\RootUnit.pas=</Transaction>
+    <Transaction>2022/10/21 06:35:49.000.406,E:\Delphi\APICnpj\Pkg.Json.DTO.pas=</Transaction>
+    <Transaction>2022/10/21 06:36:02.000.059,=E:\Delphi\APICnpj\Pkg.Json.DTO.pas</Transaction>
+    <Transaction>2022/10/21 06:36:02.000.091,=E:\Delphi\APICnpj\RootUnit.pas</Transaction>
+    <Transaction>2022/10/21 07:03:17.000.829,E:\Delphi\APICnpj\Pkg.Json.DTO.pas=</Transaction>
+    <Transaction>2022/10/21 07:03:21.000.429,E:\Delphi\APICnpj\RootUnit.pas=</Transaction>
+    <Transaction>2022/10/21 07:04:52.000.406,=E:\Delphi\APICnpj\Pkg.Json.DTO.pas</Transaction>
+    <Transaction>2022/10/21 07:04:52.000.464,=E:\Delphi\APICnpj\RootUnit.pas</Transaction>
+    <Transaction>2022/10/21 10:04:33.000.715,E:\Delphi\APICnpj\RootUnit.pas=</Transaction>
+    <Transaction>2022/10/21 10:04:36.000.319,E:\Delphi\APICnpj\Pkg.Json.DTO.pas=</Transaction>
+    <Transaction>2022/10/21 10:05:47.000.652,=E:\Delphi\APICnpj\Pkg.Json.DTO.pas</Transaction>
+    <Transaction>2022/10/21 10:05:47.000.705,=E:\Delphi\APICnpj\RootUnit.pas</Transaction>
+    <Transaction>2022/10/21 11:05:31.000.991,=E:\Delphi\APICnpj\uFormat.pas</Transaction>
+    <Transaction>2022/10/21 17:15:12.000.790,E:\Delphi\APICnpj\uFormat.pas=</Transaction>
+    <Transaction>2022/10/21 17:15:59.000.595,=E:\Delphi\APICnpj\uFormat.pas</Transaction>
+    <Transaction>2022/10/27 07:16:13.000.895,=E:\Delphi\APICnpj\DM.pas</Transaction>
+  </Transactions>
+</BorlandProject>
