@@ -121,11 +121,11 @@ begin
     str := Copy(str, 1, 8);
 
     if Length(str) < 8 then
-        Result := Mask('##/##/####', str)
+        Result := Mask('##-##-####', str)
     else
     begin
         try
-            str := Mask('##/##/####', str);
+            str := Mask('##-##-####', str);
             strtodate(str);
             Result := str;
         except

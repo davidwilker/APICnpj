@@ -83,6 +83,12 @@
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+        <DCC_DcpOutput>E:\Delphi\APICnpj\Output\dcu\</DCC_DcpOutput>
+        <DCC_ExeOutput>E:\Delphi\APICnpj\Output\</DCC_ExeOutput>
+        <DCC_BplOutput>E:\Delphi\APICnpj\Output\dcu\</DCC_BplOutput>
+        <DCC_DcuOutput>E:\Delphi\APICnpj\Output\dcu\</DCC_DcuOutput>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -105,8 +111,18 @@
         <DCCReference Include="Pkg.Json.DTO.pas"/>
         <DCCReference Include="RootUnit.pas"/>
         <DCCReference Include="uFormat.pas"/>
-        <DCCReference Include="DM.pas">
-            <Form>unitDM</Form>
+        <DCCReference Include="unitMensagens.pas">
+            <Form>formMensagens</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="unitFuncoes.pas"/>
+        <DCCReference Include="classe.conexao.pas"/>
+        <DCCReference Include="unitConfigServidor.pas">
+            <Form>formConfigServidor</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="unitDM.pas">
+            <Form>DM</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
@@ -130,9 +146,13 @@
                 <Source>
                     <Source Name="MainSource">CNPJ.dpr</Source>
                 </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k270.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp270.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
-                <DeployFile LocalName="Win32\Debug\CNPJ.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="Output\CNPJ.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>CNPJ.exe</RemoteName>
                         <Overwrite>true</Overwrite>
